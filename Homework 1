@@ -1,0 +1,4 @@
+from astropy.table import Table
+from astroquery.vizier import Vizier
+
+V = Vizier(columns = ['Vmag'], column_filters = {Vmag': '!='} , row_limit = -1)
