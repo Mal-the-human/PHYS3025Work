@@ -1,5 +1,10 @@
 from astropy.table import Table
 from astroquery.vizier import Vizier
 
-V = Vizier(columns = ['Vmag'] , column_filters = {Vmag': '!='} , row_limit = -1)
-B = Vizier(columns = ['Bmag'] , column_filters = {Vmag': '!='} , row_limit = -1)
+V = Vizier(columns = ['Vmag'] , column_filters = {'Vmag': '!='} , row_limit = -1)
+B = Vizier(columns = ['Bmag'] , column_filters = {'Bmag': '!='} , row_limit = -1)
+Plx = Vizier(columns = ['Plx'] , column_filters = {'Plx': '!='} , row_limit = -1)
+Plx_e = Vizier(columns = ['e_Plx'] , column_filters = {'e_Plx': '!='} , row_limit = -1)
+SpType = Vizier(columns = ['SpType'] , column_filters = {'SpType': '!='} , row_limit = -1)
+
+result
