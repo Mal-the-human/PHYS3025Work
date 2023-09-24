@@ -1,4 +1,5 @@
 from astropy.table import Table
 from astroquery.vizier import Vizier
 
-V = Vizier(columns = ['Vmag'], column_filters = {Vmag': '!='} , row_limit = -1)
+V = Vizier(columns = ['Vmag'] , column_filters = {Vmag': '!='} , row_limit = -1)
+B = Vizier(columns = ['Bmag'] , column_filters = {Vmag': '!='} , row_limit = -1)
